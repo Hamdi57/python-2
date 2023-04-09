@@ -57,4 +57,10 @@ if (not previous_weather == ""):
 	if not( temp_diff == 0.0):
 		print "Temperature has changed by: %.2f degrees C" % (temp_diff)
 		
+"""
+For example, separate try-except blocks are used for retrieving weather information and recording previous weather data. 
+You can increase the readability of the code by using these blocks in a single try-except block.
 
+Also, if there is an error accessing the API (for example, an incorrect city name is given), the code continues to run without errors,
+but the weather data cannot be retrieved and the temperature cannot be calculated. In this case, it would be better to inform the user by printing an error message.
+"""
